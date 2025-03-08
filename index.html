@@ -13,20 +13,20 @@
             text-align: center;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 50px auto;
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
-        h1 {
+        h1, h2, h3 {
             color: #333;
         }
-        p {
+        p, li {
             font-size: 18px;
             color: #555;
-            text-align: justify;
         }
         .btn {
             display: inline-block;
@@ -39,6 +39,12 @@
         }
         .btn:hover {
             background: #0056b3;
+        }
+        .faq {
+            margin-top: 30px;
+        }
+        .faq h3 {
+            color: #007bff;
         }
     </style>
 </head>
@@ -54,6 +60,42 @@
             <li><strong>Ochiq manba loyihalari:</strong> GitHub orqali foydalanuvchilar ochiq manba kodlarini o‘rganishlari va ularga o‘z hissalarini qo‘shishlari mumkin.</li>
             <li><strong>Pull request va Issues:</strong> Kodni takomillashtirish uchun muhokamalar olib borish va xatolarni kuzatish imkonini beradi.</li>
         </ul>
+        <h2>GitHub'ga qanday qilib loyiha yuklash mumkin?</h2>
+        <ol>
+            <li>GitHub’da akkaunt oching va yangi repository yarating.</li>
+            <li>Kompyuteringizda Git o‘rnatilganligini tekshiring.</li>
+            <li>Quyidagi buyruqlar yordamida loyihani GitHub'ga yuklang:</li>
+        </ol>
+        <pre>
+            git init
+            git add .
+            git commit -m "Birinchi commit"
+            git branch -M main
+            git remote add origin https://github.com/username/repository.git
+            git push -u origin main
+        </pre>
+        <h2>GitHub'da o‘zgarishlarni qanday qilish mumkin?</h2>
+        <ol>
+            <li>Loyihada o‘zgarishlar qiling.</li>
+            <li>Quyidagi buyruqlarni bajaring:</li>
+        </ol>
+        <pre>
+            git add .
+            git commit -m "O‘zgarishlar qo‘shildi"
+            git push origin main
+        </pre>
+        <h2>GitHub haqida video qo‘llanma</h2>
+        <p>Quyidagi video orqali GitHub bilan ishlash bo‘yicha vizual tushunchaga ega bo‘lishingiz mumkin:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" frameborder="0" allowfullscreen></iframe>
+        <div class="faq">
+            <h2>Tez-tez beriladigan savollar</h2>
+            <h3>1. Git va GitHub farqi nimada?</h3>
+            <p>Git – bu versiya boshqaruv tizimi, GitHub esa kodlarni internetda saqlash va jamoaviy ishlash uchun platforma.</p>
+            <h3>2. GitHub tekinmi?</h3>
+            <p>Ha, GitHub ochiq manba loyihalari va shaxsiy repository'lar uchun bepul versiyaga ega.</p>
+            <h3>3. GitHub'da qanday qilib boshqa foydalanuvchilar bilan ishlash mumkin?</h3>
+            <p>Repositoryga boshqa foydalanuvchilarni taklif qilish yoki fork va pull request yordamida hamkorlik qilish mumkin.</p>
+        </div>
         <p>Agar siz GitHub haqida batafsil ma'lumot olishni istasangiz, quyidagi tugmani bosing.</p>
         <a href="https://github.com" target="_blank" class="btn">Batafsil</a>
     </div>
